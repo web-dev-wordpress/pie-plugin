@@ -1,0 +1,2 @@
+git config --global user.name "web-dev-wordpress"
+git config --global user.email john.dreamw@gmail.com
