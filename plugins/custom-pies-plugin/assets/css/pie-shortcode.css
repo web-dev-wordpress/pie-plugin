@@ -1,0 +1,96 @@
+/* Styles for the Pie Shortcode */
+.pie-list {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pie-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pie-list li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.pie-list h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer; /* Make the title clickable */
+    display: flex;
+    align-items: center;
+}
+
+.pie-list .toggle-arrow {
+    margin-right: 10px;
+    font-size: 24px; /* Make the arrow bigger */
+    transition: transform 0.3s ease; /* Smooth arrow rotation */
+}
+
+.pie-list .pie-details {
+    margin-top: 10px;
+    color: #555;
+    display: none; /* Initially hide the details */
+}
+
+.pie-list .pie-type,
+.pie-list .pie-ingredients,
+.pie-list .pie-description {
+    margin-bottom: 10px;
+}
+
+.pie-type {
+    font-weight: bold;
+    color: #555;
+}
+
+.pie-description {
+    color: #777;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.pagination ul li {
+    display: inline-block;
+}
+
+.pagination ul li a {
+    display: block;
+    padding: 8px 12px;
+    background-color: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.pagination ul li a:hover {
+    background-color: #005983;
+}
+
+.pagination ul li span {
+    display: block;
+    padding: 8px 12px;
+    background-color: #ddd;
+    color: #777;
+    border-radius: 3px;
+}
+
+/* Rotate the arrow when the content is visible */
+.pie-title.open .toggle-arrow {
+    transform: rotate(90deg); /* Rotate the arrow to point downwards */
+}
